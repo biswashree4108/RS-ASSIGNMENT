@@ -1,0 +1,5 @@
+sensor_input = input("Enter 6 sensor values: ")
+sensor_values = list(map(int, sensor_input))
+active_sensors = len(list(filter(lambda x: x == 1, sensor_values)))
+print("Sensor Values:", sensor_values)
+print("Active Sensors:", active_sensors)
