@@ -1,10 +1,10 @@
-from math import gcd
+import math
 
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 
-g = gcd(a, b)
-l = (a * b) // g
+gcd = math.gcd(a,b)
+lcm = (a * b) // gcd
 
-print("GCD =", g)
-print("LCM =", l)
+print("GCD:", gcd)
+print("LCM:", lcm)
